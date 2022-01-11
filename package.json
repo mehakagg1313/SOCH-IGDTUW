@@ -1,0 +1,24 @@
+{
+  "name": "soch-igdtuw",
+  "version": "1.0.0",
+  "description": "<hr>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnshikaG0219/SOCH-IGDTUW.git"
+  },
+  "author": "soch igdtuw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnshikaG0219/SOCH-IGDTUW/issues"
+  },
+  "homepage": "https://github.com/AnshikaG0219/SOCH-IGDTUW#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  }
+}
