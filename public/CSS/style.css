@@ -1,6 +1,13 @@
 :root{
     --font-sans: 'Poppins', sans-serif;
     --font-serif: 'Playfair Display', serif; 
+    --blue-grey: #374a50;
+    --cyan: #00adb5;
+    --pink: #d8849e;
+    --peach: #e9a6a6;
+    --salmon: #fdaf7c;
+    --blue: #4d56a2;
+    --grey: #96afb6;
 }
 body{
     margin: 0;
@@ -15,7 +22,7 @@ nav{
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background: #DEEEEA;
+    background: var(--blue-grey);
     z-index: 100;
 }
 .logo{
@@ -36,11 +43,11 @@ nav ul li a{
     text-transform: uppercase;
     font-size: 1.2vw;
     font-weight: 600;
-    color: #231E23;
+    color: #fff;
     text-decoration: none;
 }
 nav ul li a:hover{
-    color: #BF1363;
+    color: var(--peach);
 }
 #bg-video{
     width: 100%;

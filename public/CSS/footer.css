@@ -1,0 +1,22 @@
+:root{
+    --font-sans: 'Poppins', sans-serif;
+    --font-serif: 'Playfair Display', serif; 
+    --blue-grey: #374a50;
+    --cyan: #00adb5;
+    --pink: #d8849e;
+    --peach: #e9a6a6;
+    --salmon: #fdaf7c;
+    --blue: #4d56a2;
+    --grey: #96afb6;
+}
+footer{
+    display: flex;
+    background-color: var(--blue-grey);
+    padding: 3vw 0;
+    justify-content: space-evenly;
+    color: white;
+}
+.footer-logo{
+    border-radius: 50%;
+    width: 8vw;
+}
