@@ -1,55 +1,163 @@
-:root{
-    --font-sans: 'Poppins', sans-serif;
-    --font-serif: 'Playfair Display', serif; 
-    --blue-grey: #374a50;
-    --cyan: #00adb5;
-    --pink: #d8849e;
-    --peach: #e9a6a6;
-    --salmon: #fdaf7c;
-    --blue: #4d56a2;
-    --grey: #96afb6;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mont-sans: "Montserrat", sans-serif;
+  --font-round: "Quicksand", sans-serif;
+  --light-blue: #b8e1ed;
+  --mid-blue: #7db0cb;
+  --dark-blue: #12476c;
+  --red: #f2898a;
+  --green: #00aca0;
+  --pink: #e89897;
+  --yellow: #ebb145;
+  --cream: #e7e3d7;
+  --green2: #41b3a3;
+  --light-green: #85cdca;
+  --orange-red: #e27d60;
+  --pink2: #c38d9e;
+  --orange-yellow: #e8a87c;
+  /* palette 1 */
+  --cg-blue: #0081a7ff;
+  --verdigris: #00afb9ff;
+  --light-yellow: #fdfcdcff;
+  --peach-puff: #fed9b7ff;
+  --bittersweet: #f07167ff;
+  /* palette 2 */
+  --princeton-orange: #ee8434ff;
+  --indian-red: #c95d63ff;
+  --english-lavender: #ae8799ff;
+  --glaucous: #717ec3ff;
+  --royal-blue-light: #496ddbff;
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-sans);
-    color: #231E23;
+::-webkit-scrollbar {
+  width: 1vh;
 }
-nav{
-    display: flex;
-    /* width: 80%; */
-    padding: 1vw 10%;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background: var(--blue-grey);
-    z-index: 100;
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--light-yellow);
+  border-radius: 10px;
 }
-.logo{
-    width: 5vw;
-    border-radius: 50%;
-    cursor: pointer;
+::-webkit-scrollbar-thumb {
+  background: var(--bittersweet);
+  border-radius: 10px;
 }
-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 40%;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
 }
-nav ul li{
-    list-style: none;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
 }
-nav ul li a{
-    text-transform: uppercase;
-    font-size: 1.2vw;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
+nav {
+  display: flex;
+  position: absolute;
+  top: 3vh;
+  left: 7%;
+  width: 86%;
+  margin: auto;
+  justify-content: space-between;
+  /* position: sticky;
+    top: 0; */
+  z-index: 100;
+  align-items: center;
 }
-nav ul li a:hover{
-    color: var(--peach);
+.logo {
+  width: 8vh;
+  border-radius: 50%;
+  cursor: pointer;
 }
-#bg-video{
-    width: 100%;
-    height: 80%;
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 60%;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 2vw;
+}
+nav ul li a {
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: 500;
+  color: var(--dark-blue);
+  text-decoration: none;
+  text-align: right;
+  transition: 0.2s;
+}
+nav ul li a:hover {
+  color: var(--red);
+}
+.menu {
+  display: block;
+  width: 40px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+}
+.menu div {
+  position: absolute;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--dark-blue);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6),
+    width 0.2s ease 0.2s;
+}
+.menu input {
+  display: none;
+}
+.menu input + div {
+  top: 50%;
+  left: 0;
+  margin: -2px 0 0 0;
+  width: 40px;
+  transform-origin: 50% 50%;
+}
+.menu input + div + div {
+  top: 2px;
+  left: 0;
+  width: 20px;
+  transform-origin: 0 50%;
+}
+.menu input + div + div + div {
+  bottom: 2px;
+  right: 0;
+  width: 28px;
+  transform-origin: 100% 50%;
+  transform: translate(-12px, 0);
+}
+.menu input:checked + div {
+  transform: rotate(-45deg);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s;
+}
+.menu input:checked + div + div {
+  width: 19px;
+  transform: translate(6px, 0) rotate(45deg);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s,
+    width 0.2s ease;
+}
+.menu input:checked + div + div + div {
+  width: 19px;
+  transform: translate(-6px, 0) rotate(45deg);
+  transition: transform 0.45s cubic-bezier(0.9, -0.6, 0.3, 1.6) 0.1s,
+    width 0.2s ease;
+}
+.discord-btn {
+  background-color: var(--bittersweet);
+  font-family: var(--font-round);
+  font-weight: 600;
+  color: white;
+  border: none;
+  padding: 1vh 4vh;
+  border-radius: 2.5vh;
+  margin-left: 5vh;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.discord-btn:hover {
+  /* background-color: var(--dark-blue); */
+  box-shadow: 0px 13px 20px -10px rgba(0, 0, 0, 0.404);
 }

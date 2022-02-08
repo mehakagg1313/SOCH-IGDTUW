@@ -1,3 +1,186 @@
-main{
-    min-height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+:root {
+  --font-sans: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mont-sans: "Montserrat", sans-serif;
+  --font-round: "Quicksand", sans-serif;
+  --light-blue: #b8e1ed;
+  --mid-blue: #7db0cb;
+  --dark-blue: #12476c;
+  --red: #f2898a;
+  --yellow: #ea9640;
+  --green: #00aca0;
+  --pink: #e89897;
+  --yellow2: #ebb145;
+  --cream: #e7e3d7;
+  /* palette 1 */
+  --cg-blue: #0081a7ff;
+  --verdigris: #00afb9ff;
+  --light-yellow: #fdfcdcff;
+  --peach-puff: #fed9b7ff;
+  --bittersweet: #f07167ff;
+  /* palette 2 */
+  --princeton-orange: #ee8434ff;
+  --indian-red: #c95d63ff;
+  --english-lavender: #ae8799ff;
+  --glaucous: #717ec3ff;
+  --royal-blue-light: #496ddbff;
+}
+::selection {
+  background-color: var(--verdigris);
+  color: var(--dark-blue);
+}
+main {
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  background-image: url("/Assets/soch-bg.png");
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+}
+.heading h1,
+.heading p,
+.heading h4 {
+  margin: 0;
+  font-weight: 700;
+}
+.heading h1 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+}
+.heading p {
+  font-weight: 500;
+}
+.head-content {
+  color: var(--dark-blue);
+  /* color: white; */
+  font-family: var(--font-sans);
+  height: 50vh;
+  margin: auto;
+  position: relative;
+}
+.head-text {
+  position: relative;
+  z-index: 2;
+}
+.stroke {
+  fill: var(--dark-blue);
+  position: absolute;
+  top: -10vh;
+  left: -10vh;
+  width: 140%;
+  height: 100%;
+  z-index: 1;
+}
+.underline {
+  height: 0.2vw;
+  width: 10vh;
+  margin: 2.5vh auto;
+  display: block;
+  background-color: #81b1c0;
+}
+.heading h3 {
+  color: #81b1c0;
+}
+.teams {
+  text-align: center;
+  width: 80%;
+  margin: 5vh auto 0;
+  min-height: 70vh;
+  position: relative;
+}
+.teams h1, .container h1{
+  color: var(--dark-blue);
+  /* font-size: 1.5rem; */
+  font-weight: 600;
+  margin: 0;
+}
+.teams h4, .container h4{
+  margin: 0;
+  color: var(--mid-blue);
+  font-weight: 500;
+}
+.team-cards {
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 13px 20px -10px rgba(0, 0, 0, 0.404);
+  border-radius: 2vh;
+  position: absolute;
+  padding: 10% 3vw;
+}
+.team-card-wrap{
+  display: flex;
+  justify-content: space-evenly;
+}
+.know-btn{
+  background: var(--red);
+  border: none;
+  outline: none;
+  font-family: var(--font-round);
+  color: white;
+  font-size: 1rem;
+  padding: 1vh 3vh;
+  border-radius: 4vh;
+  margin-top: 6vh;
+  font-weight: 600;
+}
+.team-icon {
+  width: 10vh;
+}
+.team-card {
+  padding: 0 2vh;
+}
+.team-card h5 {
+  color: var(--red);
+  font-family: var(--font-round);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.team-card p {
+  color: var(--dark-blue);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.about {
+  background-color: var(--dark-blue);
+  min-height: 90vh;
+}
+.container{
+  width: 90%;
+  text-align: center;
+  padding-top: 35vh;
+  margin: 0 auto;
+  color: white;
+}
+.container h1{
+  font-weight: 600;
+  color: white;
+}
+.illust{
+  width: 30vw;
+  height: 100%;
+}
+.about-wrap{
+  margin-top: 10vh;
+}
+.about-con{
+  display: flex;
+  justify-content: space-between;
+}
+.about-con p{
+  background: white;
+  color: var(--dark-blue);
+  border-radius: 2vh;
+  width: 40%;
+  line-height: 5vh;
+  height: 100%;
+  padding: 4% 4% 3%;
+}
+.about-con p::first-letter{
+  font-size: 1.5rem;
+  font-weight: bold;
 }
