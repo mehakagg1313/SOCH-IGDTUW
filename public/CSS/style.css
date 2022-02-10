@@ -4,45 +4,26 @@
   --font-serif: "Playfair Display", serif;
   --font-mont-sans: "Montserrat", sans-serif;
   --font-round: "Quicksand", sans-serif;
-  --light-blue: #b8e1ed;
-  --mid-blue: #7db0cb;
-  --dark-blue: #12476c;
-  --red: #f2898a;
-  --green: #00aca0;
-  --pink: #e89897;
-  --yellow: #ebb145;
-  --cream: #e7e3d7;
-  --green2: #41b3a3;
-  --light-green: #85cdca;
-  --orange-red: #e27d60;
-  --pink2: #c38d9e;
-  --orange-yellow: #e8a87c;
-  /* palette 1 */
-  --cg-blue: #0081a7ff;
-  --verdigris: #00afb9ff;
-  --light-yellow: #fdfcdcff;
-  --peach-puff: #fed9b7ff;
-  --bittersweet: #f07167ff;
-  /* palette 2 */
-  --princeton-orange: #ee8434ff;
-  --indian-red: #c95d63ff;
-  --english-lavender: #ae8799ff;
-  --glaucous: #717ec3ff;
-  --royal-blue-light: #496ddbff;
+  --bright-pink: #FF577F;
+  --purple: #6F69AC;
+  --light-blue: #C2E3EC;
+  --yellow: #FCE38A;
+  --peach2: #FF9A8C;
+  --dark-blue: #071E3D;
 }
 ::-webkit-scrollbar {
   width: 1vh;
 }
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px var(--light-yellow);
+  box-shadow: inset 0 0 5px var(--light-blue);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--bittersweet);
+  background: var(--peach2);
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--red);
+  background: #fc8374;
 }
 body {
   margin: 0;
@@ -87,7 +68,7 @@ nav ul li a {
   transition: 0.2s;
 }
 nav ul li a:hover {
-  color: var(--red);
+  color: var(--peach);
 }
 .menu {
   display: block;
@@ -144,7 +125,7 @@ nav ul li a:hover {
     width 0.2s ease;
 }
 .discord-btn {
-  background-color: var(--bittersweet);
+  background-color: var(--purple);
   font-family: var(--font-round);
   font-weight: 600;
   color: white;

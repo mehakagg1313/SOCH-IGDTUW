@@ -4,39 +4,23 @@
   --font-serif: "Playfair Display", serif;
   --font-mont-sans: "Montserrat", sans-serif;
   --font-round: "Quicksand", sans-serif;
-  --light-blue: #b8e1ed;
-  --mid-blue: #7db0cb;
-  --dark-blue: #12476c;
-  --red: #f2898a;
-  --yellow: #ea9640;
-  --green: #00aca0;
-  --pink: #e89897;
-  --yellow2: #ebb145;
-  --cream: #e7e3d7;
-  /* palette 1 */
-  --cg-blue: #0081a7ff;
-  --verdigris: #00afb9ff;
-  --light-yellow: #fdfcdcff;
-  --peach-puff: #fed9b7ff;
-  --bittersweet: #f07167ff;
-  /* palette 2 */
-  --princeton-orange: #ee8434ff;
-  --indian-red: #c95d63ff;
-  --english-lavender: #ae8799ff;
-  --glaucous: #717ec3ff;
-  --royal-blue-light: #496ddbff;
+  --bright-pink: #FF577F;
+  --purple: #6F69AC;
+  --light-blue: #C2E3EC;
+  --yellow: #FCE38A;
+  --peach2: #FF9A8C;
+  --dark-blue: #071E3D;
 }
 ::selection {
-  background-color: var(--verdigris);
-  color: var(--dark-blue);
+  background-color: var(--yellow);
+  color: var(--dark);
 }
 main {
   min-height: 100vh;
 }
-
 .heading {
   text-align: center;
-  background-image: url("/Assets/soch-bg.png");
+  background-image: url("/Assets/SOCH-bg-final.png");
   min-height: 100vh;
   background-size: cover;
   display: flex;
@@ -100,7 +84,7 @@ main {
 }
 .teams h4, .container h4{
   margin: 0;
-  color: var(--mid-blue);
+  color: #C2E3EC;
   font-weight: 500;
 }
 .team-cards {
@@ -116,7 +100,7 @@ main {
   justify-content: space-evenly;
 }
 .know-btn{
-  background: var(--red);
+  background: var(--bright-pink);
   border: none;
   outline: none;
   font-family: var(--font-round);
@@ -134,7 +118,7 @@ main {
   padding: 0 2vh;
 }
 .team-card h5 {
-  color: var(--red);
+  color: var(--bright-pink);
   font-family: var(--font-round);
   font-size: 1rem;
   font-weight: 600;
