@@ -24,15 +24,39 @@
     <link rel="stylesheet" href="CSS/footer.css"/>
   </head>
   <body>
-    <nav>
-      <a href="/">
-        <img src="Assets/SOCH-logo.jpeg" class="logo" alt="SOCH LOGO" />
-      </a>
-      <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="/about">about us</a></li>
-        <li><a href="/events">events</a></li>
-        <li><a href="/team">team</a></li>
-        <li><a href="/contact">contact</a></li>
-      </ul>
-    </nav>
+    
+      <nav class="navbar">
+        <a href="/">
+          <img src="Assets/SOCH-logo.jpeg" class="logo" alt="SOCH LOGO" />
+          
+        </a>
+        
+        
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+    
+      </nav>
+      
+      <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+
+
+      </script>  
+      </body>
