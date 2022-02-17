@@ -29,6 +29,10 @@ app.get("/contact", function(req,res){
     res.render("contact")
 });
 
+app.get("/calendar", function(req,res){
+    res.render("calendar")
+});
+
 app.listen(3000, function(){
     console.log("server stated on port 3000")
 })
