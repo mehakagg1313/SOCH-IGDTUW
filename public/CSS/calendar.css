@@ -187,7 +187,7 @@ button:focus {
 
 .calendar-inner .calendar-table {
     border-collapse: collapse;
-    font-size: 20px;
+    /* font-size: 20px; */
     width: 100%;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -229,10 +229,12 @@ tr.calendar-body .calendar-day {
 
 tr.calendar-body .calendar-day .day {
     position: relative;
-    padding: 15px;
-    height: 60px;
-    width: 60px;
+    /* padding: 15px; */
+    padding-top: 5px;
+    height: 25px;
+    width: 25px;
     margin: 0 auto;
+    font-size: 2vh;
     border-radius: 50%;
     text-align: center;
     color: #5a5a5a;
@@ -444,7 +446,7 @@ tr.calendar-body .calendar-day .day[disabled] {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    top: 100%;
+    top: 130%;
     left: 50%;
     -webkit-transform: translate(-50%, calc(-100% + -5px));
     -ms-transform: translate(-50%, calc(-100% + -5px));
@@ -457,8 +459,8 @@ tr.calendar-body .calendar-day .day[disabled] {
 }
 
 .event-indicator>.type-bullet>div {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%
 }
 

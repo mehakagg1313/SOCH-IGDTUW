@@ -1,22 +1,19 @@
 <%- include("partials/header"); %>
+    <div id="calendar"></div>
     <div class="events">
-        <div id="calendar"></div>
-        <div class="events">
-            <div class="event_container">
+        <div class="event_container">
+            <% for(var i=0; i<6; i++) { %>
                 <div class="item-container">
                     <div class="img-container">
-                        <img src="/Assets/write-illust.png" alt="Event image">
+                        <img src="/Assets/temp-event.png" alt="Event image">
                     </div>
-
                     <div class="body-container">
                         <div class="overlay"></div>
-
                         <div class="event-info">
                             <p class="title">EVENT NAME</p>
                             <div class="separator"></div>
                             <p class="info">LOCATION</p>
                             <p class="price">Free</p>
-
                             <div class="additional-info">
                                 <p class="info">
                                     <i class="fas fa-map-marker-alt"></i>
@@ -26,7 +23,6 @@
                                     <i class="far fa-calendar-alt"></i>
                                     Sat, Sep 19, 10:00 AM
                                 </p>
-
                                 <p class="info description">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda quidem
                                     neque ducimus non aperiam exercitationem! <span>more...</span>
@@ -36,111 +32,7 @@
                         <button class="action">Book it</button>
                     </div>
                 </div>
-
-                <div class="item-container">
-                    <div class="img-container">
-                        <img src="/Assets/write-illust.png" alt="Event image">
-                    </div>
-
-                    <div class="body-container">
-                        <div class="overlay"></div>
-
-                        <div class="event-info">
-                            <p class="title">EVENT NAME</p>
-                            <div class="separator"></div>
-                            <p class="info">LOCATION</p>
-                            <p class="price">29$</p>
-
-                            <div class="additional-info">
-                                <p class="info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    245 W 52nd St
-                                </p>
-                                <p class="info">
-                                    <i class="far fa-calendar-alt"></i>
-                                    Sat, Sep 19, 10:00 AM
-                                </p>
-
-                                <p class="info description">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam veritatis, error,
-                                    fugiat nulla accusamus ea vero, quo labo<span>more...</span>
-                                </p>
-                            </div>
-                        </div>
-                        <button class="action">Book it</button>
-                    </div>
-                </div>
-
-                <div class="item-container">
-                    <div class="img-container">
-                        <img src="/Assets/write-illust.png" alt="Event image">
-                    </div>
-
-                    <div class="body-container">
-                        <div class="overlay"></div>
-
-                        <div class="event-info">
-                            <p class="title">The Festival</p>
-                            <div class="separator"></div>
-                            <p class="info">LOCATION</p>
-                            <p class="price">70$</p>
-
-                            <div class="additional-info">
-                                <p class="info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    245 W 52nd St
-                                </p>
-                                <p class="info">
-                                    <i class="far fa-calendar-alt"></i>
-                                    Sat, Sep 19, 10:00 AM
-                                </p>
-
-                                <p class="info description">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi aliquid sunt
-                                    libero consectetur necessitatibus atque asperiores <span>more...</span>
-                                </p>
-                            </div>
-                        </div>
-                        <button class="action">Book it</button>
-                    </div>
-                </div>
-
-                <div class="item-container">
-                    <div class="img-container">
-                        <img src="/Assets/write-illust.png" alt="Event image">
-                    </div>
-
-                    <div class="body-container">
-                        <div class="overlay"></div>
-
-                        <div class="event-info">
-                            <p class="title">Tech Event</p>
-                            <div class="separator"></div>
-                            <p class="info">LOCATION</p>
-                            <p class="price">35$</p>
-
-                            <div class="additional-info">
-                                <p class="info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    245 W 52nd St
-                                </p>
-                                <p class="info">
-                                    <i class="far fa-calendar-alt"></i>
-                                    Sat, Sep 19, 10:00 AM
-                                </p>
-
-                                <p class="info description">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptatem quia in,
-                                    illum natus, quibusdam ea ratione dolor harum totam reprehenderit
-                                    <span>more...</span>
-                                </p>
-                            </div>
-                        </div>
-                        <button class="action">Book it</button>
-                    </div>
-                </div>
-            </div>
-
+            <% } %>
         </div>
     </div>
     <%- include("partials/footer"); %>
