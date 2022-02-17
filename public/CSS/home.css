@@ -4,12 +4,12 @@
   --font-serif: "Playfair Display", serif;
   --font-mont-sans: "Montserrat", sans-serif;
   --font-round: "Quicksand", sans-serif;
-  --bright-pink: #FF577F;
-  --purple: #6F69AC;
-  --light-blue: #C2E3EC;
-  --yellow: #FCE38A;
-  --peach2: #FF9A8C;
-  --dark-blue: #071E3D;
+  --bright-pink: #ff577f;
+  --purple: #6f69ac;
+  --light-blue: #c2e3ec;
+  --yellow: #fce38a;
+  --peach2: #ff9a8c;
+  --dark-blue: #071e3d;
 }
 ::selection {
   background-color: var(--yellow);
@@ -76,15 +76,17 @@ main {
   min-height: 70vh;
   position: relative;
 }
-.teams h1, .container h1{
+.teams h1,
+.container h1 {
   color: var(--dark-blue);
   /* font-size: 1.5rem; */
   font-weight: 600;
   margin: 0;
 }
-.teams h4, .container h4{
+.teams h4,
+.container h4 {
   margin: 0;
-  color: #C2E3EC;
+  color: #c2e3ec;
   font-weight: 500;
 }
 .team-cards {
@@ -95,11 +97,11 @@ main {
   position: absolute;
   padding: 10% 3vw;
 }
-.team-card-wrap{
+.team-card-wrap {
   display: flex;
   justify-content: space-evenly;
 }
-.know-btn{
+.know-btn {
   background: var(--bright-pink);
   border: none;
   outline: none;
@@ -110,6 +112,10 @@ main {
   border-radius: 4vh;
   margin-top: 6vh;
   font-weight: 600;
+  cursor: pointer;
+}
+.know-btn:hover {
+  background: var(--purple);
 }
 .team-icon {
   width: 10vh;
@@ -133,38 +139,59 @@ main {
   background-color: var(--dark-blue);
   min-height: 90vh;
 }
-.container{
+.about .container {
   width: 90%;
   text-align: center;
   padding-top: 35vh;
   margin: 0 auto;
   color: white;
 }
-.container h1{
+.container h1 {
   font-weight: 600;
   color: white;
 }
-.illust{
+.about__illust {
   width: 30vw;
   height: 100%;
 }
-.about-wrap{
+.about-wrap {
   margin-top: 10vh;
 }
-.about-con{
+.about-con {
   display: flex;
   justify-content: space-between;
 }
-.about-con p{
+.about-con p {
   background: white;
   color: var(--dark-blue);
-  border-radius: 2vh;
+  /* border-radius: 2vh; */
+  border: none;
+  border-radius: 40px 10px;
+  /* background: gold; */
   width: 40%;
   line-height: 5vh;
   height: 100%;
   padding: 4% 4% 3%;
 }
-.about-con p::first-letter{
+.about-con p::first-letter {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  .team-card-wrap {
+    flex-direction: column;
+  }
+  .about-con {
+    flex-direction: column;
+  }
+  .about__illust,
+  .about-con p{
+    width: auto;
+  }
+  .about .container {
+    padding-top: 55vh;
+  }
 }
