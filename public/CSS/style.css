@@ -36,12 +36,14 @@ nav {
   top: 3vh;
   left: 7%;
   width: 86%;
+  /* padding: 1vh 7%; */
   margin: auto;
   justify-content: space-between;
   /* position: sticky;
     top: 0; */
   z-index: 100;
   align-items: center;
+  background-color: var(--light-blue);
 }
 .nav__logo{
   display: inline-block;
