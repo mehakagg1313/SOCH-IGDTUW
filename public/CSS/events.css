@@ -8,15 +8,15 @@
 body {
     min-height: 100vh;
     width: 100%;
-    font-size: 16px;
-    background: #eee;
+    /* font-size: 16px; */
+    /* background: #eee; */
     color: #777;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-.container {
+.event_container {
     width: 100%;
     display: flex;
     justify-content: center;
